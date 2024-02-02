@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            text-align: left;
+            z-index: 1;
+        }
+
+        .submenu a {
+            display: block;
+            color: gray;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        nav li:hover .submenu {
+            display: block;
+        }
+
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        nav a {
+            background-color: red;
+            padding: 10px;
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menú</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Webs</a>
+                <ul class="submenu">
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+                    <li><a href="https://www.w3.org/" target="_blank">W3C</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ayuda</a></li>
+            <li>
+                <a href="#">Examen</a>
+                <ul class="submenu">
+                    <li><a href="./semantica.html">Semántica</a></li>
+                    <li><a href="/doc/manual_html5.pdf" download>Apuntes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        <a href="./menu.html">Menú.html</a>
+    </footer>
+
+</body>
+</html>
